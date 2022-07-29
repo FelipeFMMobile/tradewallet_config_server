@@ -2,3 +2,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://naming-server.private:8761/eureka
+spring:
+    gateway:
+      routes:
+        - id: stock-extraction
+          uri: lb://stock-extraction
+          predicates:
+            - Path=/stock-extraction/**
+        - id: stock
+          uri: lb://stock
+          predicates:
+            - Path=/stock-register/**
