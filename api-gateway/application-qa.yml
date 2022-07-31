@@ -17,4 +17,4 @@ managment:
   endpoints: 
     web:
       exposure:
-        include: health,info,configprops,mappings,loggers
+        include: "health,info,configprops,mappings,loggers"
