@@ -14,7 +14,7 @@ spring:
           uri: lb://stock
           predicates:
             - Path=/stock-register/**
-managment: 
+management: 
   endpoints: 
     web:
       exposure:
