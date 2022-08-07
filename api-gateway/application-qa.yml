@@ -13,9 +13,9 @@ spring:
         - id: stock
           uri: lb://stock
           predicates:
-            - Path=/stock-register/**
-management: 
-  endpoints: 
-    web:
-      exposure:
-        include: "*"
+            - Path=/stock/**
+# management: 
+#   endpoints: 
+#     web:
+#       exposure:
+#         include: "*"
