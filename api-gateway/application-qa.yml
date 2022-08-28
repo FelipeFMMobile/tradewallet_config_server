@@ -1,15 +1,15 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: stock-extraction
-          uri: lb://stock-extraction
-          predicates:
-            - Path=/stock-extraction/**
-        - id: stock
-          uri: lb://stock
-          predicates:
-            - Path=/stock/**
+# spring:
+#   cloud:
+#     gateway:
+#       routes:
+#         - id: stock-extraction
+#           uri: lb://stock-extraction
+#           predicates:
+#             - Path=/stock-extraction/**
+#         - id: stock
+#           uri: lb://stock
+#           predicates:
+#             - Path=/stock/**
 # management: 
 #   endpoints: 
 #     web:
